@@ -1,0 +1,2 @@
+# gdrivemgr
+GoogleDriveをPythonを用いて操作することができるライブラリ
