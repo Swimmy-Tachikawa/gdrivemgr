@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdrivemgr"
+version = "0.1.0"
+description = "Google Drive Manager library (Plan -> Apply safe sync)"
+requires-python = ">=3.9"
+readme = "README.md"
+authors = [
+  { name = "Swimmy" }
+]
+dependencies = [
+  "google-api-python-client>=2.0.0",
+  "google-auth>=2.0.0",
+  "google-auth-oauthlib>=1.0.0",
+  "google-auth-httplib2>=0.2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gdrivemgr*"]
