@@ -298,7 +298,8 @@ class GoogleDriveController:
             os.makedirs(parent_dir, exist_ok=True)
 
         with open(local_path, "wb") as f:
-            downloader = MediaIoBaseDownload(fh=io.BufferedWriter(f), request=req)
+            downloader = MediaIoBaseDownload(fd
+                                             =io.BufferedWriter(f), request=req)
             done = False
             while not done:
                 status, done = self._execute(downloader.next_chunk)  # type: ignore[misc]
